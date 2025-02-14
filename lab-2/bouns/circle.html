@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bonus Circle</title>
+    <script src="circle.js" defer></script>
+  </head>
+  <body>
+    <svg width="300" height="300">
+      <circle
+        id="circle"
+        cx="150"
+        cy="150"
+        r="100"
+        stroke="black"
+        stroke-width="2px"
+        fill="url(#grad1)"
+      ></circle>
+      <defs>
+        <linearGradient id="grad1" x1="0%" x2="100%" y1="0%" y2="0%">
+          <stop offset="10%" stop-color="#fc320e" />
+          <stop offset="50%" stop-color="#fc650e" />
+          <stop offset="90%" stop-color="#fcc40e" />
+        </linearGradient>
+        <radialGradient id="grad2" x1="0%" x2="100%" y1="0%" y2="100%">
+          <stop offset="10%" stop-color="#d5fcfc" />
+          <stop offset="25%" stop-color="#b0f8f6" />
+          <stop offset="50%" stop-color="#73f5ed" />
+          <stop offset="75%" stop-color="#3cdae1" />
+          <stop offset="110%" stop-color="#272e5c" />
+        </radialGradient>
+        <radialGradient id="grad3" x1="0%" x2="0%" y1="0%" y2="100%">
+          <stop offset="0%" stop-color="#22ff1a" />
+          <stop offset="50%" stop-color="#baff1a" />
+          <stop offset="100%" stop-color="#fbff1a" />
+        </radialGradient>
+        <filter id="fltr1">
+          <feDropShadow dx="12" dy="-14" stdDeviation="1" flood-opacity="0.7" />
+        </filter>
+        <filter id="fltr2">
+          <feGaussianBlur in="SourceGraphic" stdDeviation="10" />
+        </filter>
+      </defs>
+    </svg>
+  </body>
+</html>
