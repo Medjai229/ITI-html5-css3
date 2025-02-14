@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+  </head>
+  <body>
+    <form action="" method="get">
+      <!-- * Full Name -->
+      <label for="name">Full Name: </label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Enter Your Full Name ..."
+        pattern="^([a-zA-Z]{3,}[\u0020])+[a-zA-Z]{3,}$"
+        required
+      />
+      <br />
+      <!-- * Email -->
+      <label for="email">Email: </label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Enter Your Email ..."
+        required
+      />
+      <br />
+      <!-- * Telephone -->
+      <label for="phone">Telephone: </label>
+      <input
+        type="tel"
+        id="phone"
+        name="phone"
+        placeholder="Enter Your Phone ..."
+      />
+      <br />
+      <!-- * Telephone -->
+      <label for="subject">Subject: </label>
+      <input
+        type="text"
+        id="subject"
+        name="subject"
+        placeholder="Enter Subject ..."
+        required
+      />
+      <br />
+      <!-- * Reason -->
+      <label for="inquiry">Inquiry: </label>
+      <input
+        list="inquiries"
+        id="inquiry"
+        name="inquiry"
+        placeholder="Choose your inquiry ..."
+      />
+      <datalist id="inquiries">
+        <option value="General Inquiry">General Inquiry</option>
+        <option value="Techincal Support">Techincal Support</option>
+        <option value="Feedback">Feedback</option>
+      </datalist>
+      <br />
+      <!-- * Message -->
+      <label for="message">Message: </label>
+      <textarea
+        name="message"
+        id="message"
+        placeholder="Enter your message ..."
+        rows="5"
+        required
+      ></textarea>
+      <br />
+      <!-- * Files -->
+      <label for="file">Upload files (Optional): </label>
+      <input type="file" id="file" name="file" />
+      <br />
+      <!-- * Submit -->
+      <input type="submit" id="submit" />
+    </form>
+  </body>
+</html>
