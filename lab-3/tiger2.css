@@ -1,0 +1,27 @@
+/* * Task 8 */
+
+#path2 {
+  width: 100%;
+}
+
+#tiger2 {
+  position: relative;
+  width: 200px;
+  left: 0;
+  animation: move 14s linear infinite;
+}
+
+@keyframes move {
+  0% {
+    transform: scaleX(-1) translateX(-0px);
+  }
+  50% {
+    transform: scaleX(-1) translateX(-1000px);
+  }
+  51% {
+    transform: translateX(1000px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}

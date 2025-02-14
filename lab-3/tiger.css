@@ -1,0 +1,17 @@
+/* * Task 7 */
+
+#path {
+  width: 100%;
+}
+
+#tiger {
+  position: relative;
+  width: 200px;
+  left: 0;
+  transition: left 7s linear;
+}
+
+#tiger:hover {
+  transform: scaleX(-1);
+  left: 85%;
+}

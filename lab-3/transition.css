@@ -1,0 +1,13 @@
+/* * Task 5 */
+
+#transition {
+  width: 200px;
+  height: 200px;
+  transition: all 1s linear;
+}
+
+#transition:hover {
+  width: 400px;
+  height: 400px;
+  transform: rotate(360deg);
+}

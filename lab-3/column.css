@@ -1,0 +1,7 @@
+/* * Task 3 */
+
+#column {
+  column-count: 3;
+  column-gap: 40px;
+  column-rule: 5px solid lightblue;
+}

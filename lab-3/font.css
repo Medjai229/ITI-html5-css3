@@ -1,0 +1,11 @@
+/* * Task 2 */
+
+@font-face {
+  font-family: asianFont;
+  src: url('./sources/go3v2.ttf');
+}
+
+#custom-font {
+  font-family: asianFont;
+  border: 1px solid black;
+}
