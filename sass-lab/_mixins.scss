@@ -1,0 +1,11 @@
+@mixin border-radius($height) {
+  @if $height < 150 {
+    border-radius: 15px;
+  } @else {
+    border-radius: calc($height / 10);
+  }
+}
+
+@mixin clear-float() {
+  clear: both;
+}

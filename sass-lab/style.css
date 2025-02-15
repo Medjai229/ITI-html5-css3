@@ -1,0 +1,66 @@
+#bttn-4, #bttn-3, #bttn-2, #bttn-1, #container #bttn #buy {
+  border-radius: 15px;
+  height: 60px;
+  width: 120px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #748cab;
+}
+#bttn-4:hover, #bttn-3:hover, #bttn-2:hover, #bttn-1:hover, #container #bttn #buy:hover {
+  background-color: rgb(179.5784753363, 192.600896861, 209.4215246637);
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  background-color: #0d1321;
+  color: #f0ebd8;
+}
+
+#container {
+  border-radius: 50px;
+  background-color: #1d2d44;
+  width: 50%;
+  height: 500px;
+  padding: 30px;
+  margin: auto;
+}
+#container #imgCont {
+  border-radius: 22px;
+  float: right;
+  background-color: #748cab;
+  width: 30%;
+  height: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#container #imgCont img {
+  background-color: red;
+  width: 150px;
+  height: 200px;
+}
+#container h2 {
+  font-size: 50px;
+}
+#container h3 {
+  color: #0d1321;
+  display: inline-block;
+  font-size: 40px;
+  background-color: #748cab;
+  width: 100px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+}
+#container p {
+  font-size: 20px;
+}
+#container #bttn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*# sourceMappingURL=style.css.map */

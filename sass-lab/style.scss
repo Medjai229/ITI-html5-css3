@@ -1,0 +1,77 @@
+@use '_variables';
+@use '_mixins';
+$borders: '#container, #imgCont, #buy';
+
+%bttn-style {
+  @include mixins.border-radius(60);
+  height: 60px;
+  width: 120px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: variables.$bg3-color;
+  &:hover {
+    background-color: lighten($color: variables.$bg3-color, $amount: 20%);
+  }
+}
+
+body {
+  font-family: variables.$font;
+  background-color: variables.$body-color;
+  color: variables.$font-color;
+}
+
+#container {
+  @include mixins.border-radius(500px);
+  background-color: variables.$bg1-color;
+  width: 50%;
+  height: 500px;
+  padding: 30px;
+  margin: auto;
+  #imgCont {
+    @include mixins.border-radius(220px);
+    float: right;
+    background-color: variables.$bg3-color;
+    width: 30%;
+    height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      background-color: red;
+      width: 150px;
+      height: 200px;
+    }
+  }
+  h2 {
+    font-size: 50px;
+  }
+  h3 {
+    color: variables.$body-color;
+    display: inline-block;
+    font-size: 40px;
+    background-color: variables.$bg3-color;
+    width: 100px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include mixins.border-radius(60px);
+  }
+  p {
+    font-size: 20px;
+  }
+  #bttn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    #buy {
+      @extend %bttn-style;
+    }
+  }
+}
+
+@for $i from 1 through 4 {
+  #bttn-#{$i} {
+    @extend %bttn-style;
+  }
+}
